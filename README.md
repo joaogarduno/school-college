@@ -1,0 +1,2 @@
+# schoolCollege
+Platform of schoolCollege
