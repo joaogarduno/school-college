@@ -105,17 +105,22 @@ button{
 	font-weight: bold;
 	letter-spacing: 2px;
 }
-section{
+/* section{
 	padding: 40px 0;
-}
+} */
 /* ------------------------------------------
-	SECTIONS & CONTENT
+	SECTIONS, CONTENT & ELEMENTS
 --------------------------------------------- */
 .container{
 	margin: 0 auto;
 	padding: 0 15px;
 	width: 100%;
 }
+.sectionContent{
+	margin: 25px 0;
+}
+/* .articleContent{} */
+
 /* ------------------------------------------
 	ROW & COLUMS
 --------------------------------------------- */
