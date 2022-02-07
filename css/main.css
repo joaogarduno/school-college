@@ -1,6 +1,7 @@
 /* 
 
 DESIGNED BY: Joao Garduño Salgado
+START DATE: 01-Ene-2020
 VERSION: 2.0
 RELEASED: 30-05-21
 
@@ -11,6 +12,13 @@ TITLES
 font-family: 'Playfair Display', serif;
 
 */
+/* VARIABLES DE COLOR */
+:root{
+	--color-letter: #E9E9E9;
+	--color-button: #3369E7;
+	--color-title: #333333;
+	--color-paragraph: #666666;
+}
 *, ::after, ::before{
     box-sizing: border-box;
 }
@@ -37,17 +45,22 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.5;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
-body {
-	line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -67,69 +80,78 @@ table {
 /*=====================================================
     DOM
 =====================================================*/
-html{
-	scroll-behavior: smooth;
-}
-body{
-	/* scroll-behavior: smooth; */
-	font-family: 'Noto Sans TC', sans-serif;
-	font-size: 16px;
-}
-header, nav, section, footer, article, aside{
+header, nav, main, section, article, aside, figure, footer{
 	width: 100%;
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Playfair Display', serif;
-	font-size: 25px;
-	letter-spacing: .5px;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	letter-spacing: .1rem;
 }
-ol, ul{
-	list-style: none;
-}
-p{
-	font-size: 16px;
+/* p{
 	letter-spacing: 1px;
-	line-height: 1;
-}
+} */
 a{
 	text-decoration: none;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 img{
 	max-width: 100%;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
 button{
 	border: none;
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: bold;
-	letter-spacing: 2px;
+	letter-spacing: normal;
 }
 /* section{
 	padding: 40px 0;
 } */
 /* ------------------------------------------
-	SECTIONS, CONTENT & ELEMENTS
+	MARGIN-CONTAINER, ROW, COL, SECTIONS_class, ARTICLE_class
 --------------------------------------------- */
 .container{
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 1.5rem;
 	width: 100%;
 }
 .sectionContent{
 	margin: 25px 0;
 }
 /* .articleContent{} */
-
 /* ------------------------------------------
 	ROW & COLUMS
 --------------------------------------------- */
-.row-container{
+.row-container, .col-container{
 	width: 100%;
+}
+/* .row-container{
+	margin: 1.0rem 0;
 }
 .col-container{
-	width: 100%;
+	padding: 1.0rem 0;
+} */
+/*=====================================================
+    HEADER
+=====================================================*/
+.headerContent{
+	background-color: rgba(175, 174, 174, 0.5);
 }
+/* SOCIAL INFO */
+.socialInfo{
+	outline: 1px solid red;
+}
+.socialinfo__p{
+	font-size: 1.0rem;
+	padding: 5px 0;
+}
+/* MENU */
+.navContainer{
+	color: seashell;
+}
+
 /*=====================================================
     MEDIAQUERIES
 =====================================================*/
