@@ -127,7 +127,7 @@ RELEASED: 30-05-2021
             <div class="container">
                 <div class="row-container">
                     <!-- COL 1 -->
-                    <div class="col-container">
+                    <div class="col-container colSlideNews">
                         <div id="siderText" class="slideContent">
                             <div class="slideContentText">
 
@@ -197,6 +197,32 @@ RELEASED: 30-05-2021
                     </div>
 
                     <!-- COL 2 -->
+                    <div class="col-container colForm">
+                        <div class="bannerForm">
+                            <h3 class="bannerForm__h3">registrer and be part of schoolcollege</h3>
+                            <!-- FORM -->
+                            <form action="" name="formRegister" class="bannerForm__form inscripForm">
+                                <input type="text" name="name" placeholder="Student's Name" required class="bannerForm__input">
+                                <input type="email" name="mail" placeholder="E-mail" required class="bannerForm__input">
+                                <input type="tel" name="phone" placeholder="Contact Number" required class="bannerForm__input">
+
+                                <!-- SELECT OPTIONS -->
+                                <select name="level" id="selectLevel" class="bannerForm__select" required>
+                                    <option value="">--Select Level--</option>
+                                    <option value="1">Preschool</option>
+                                    <option value="2">Elementary School</option>
+                                    <option value="3">Middle School</option>
+                                    <option value="4">High School</option>
+                                </select>
+                                
+                                <!-- BUTTON -->
+                                <input type="submit" value="Register" id="formRegister" class="bannerForm__btn">
+
+                                <!-- SPAN -->
+                                <span class="bannerForm__spanTerms">By registering you acept our <a href="#" class="bannerForm__linkTerms">Terms and Conditions</a></span>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

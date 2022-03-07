@@ -106,6 +106,7 @@ img{
 }
 button{
 	border: none;
+	cursor: pointer;
 	font-size: 1.2rem;
 	font-weight: bold;
 	letter-spacing: 0.1rem;
@@ -131,6 +132,11 @@ button{
 .row-container, .col-container{
 	width: 100%;
 }
+.row-container{
+	display: flex;
+	flex-direction: column;
+}
+.col-container{}
 /* .row-container{
 	margin: 1.0rem 0;
 }
@@ -164,14 +170,14 @@ button{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	/* width: 100%; */
+	width: 100%;
 }
 .bannerLayer{
 	background-color: rgba(255, 255, 255, 0.37);
 }
 /* ---------- ID - SLIDE CONTENT ---------- */
 #siderText{
-	/* height: 40rem; */
+	height: 50rem;
 	width: 100%;
 	overflow: hidden;
 }
@@ -230,12 +236,14 @@ input[name="control"]{
 /* ---------- TEXT ---------- */
 .slideText__hgroup--h3{
 	font-size: 3rem;
+	/* font-weight: bold; */
 	letter-spacing: 0.2rem;
 	padding: 1rem 0;
 	/* text-transform: capitalize; */
 }
 .slideText__hgroup--h6{
 	font-size: 1.8rem;
+	font-weight: normal;
 }
 .banner__slideText--p{
 	font-size: 1.4rem;
@@ -246,9 +254,11 @@ input[name="control"]{
 .banner__slideText--button{
 	background-color: #3369E7;
 	color: #FFFFFF;
+	/* cursor: pointer; */
+	margin-top: 1.5rem;
 	padding: 1.2rem 3rem;
-	width: 45%;
-	
+	text-transform: capitalize;
+	width: 45%;	
 }
 /* ---------- TRANSITION - NAVIGATION ---------- */
 #control1:checked ~ .slide1{
@@ -267,7 +277,59 @@ input[name="control"]{
 	margin-left: -60%;
 	transition: all 0.5s ease-in-out;
 }
-
+/* ---------- COL FORM ---------- */
+.bannerForm{
+	padding: 2rem 0;
+}
+.bannerForm__h3{
+	font-size: 2rem;
+	font-weight: 300;
+}
+/* .bannerForm__form{} */
+.bannerForm__form,
+.bannerForm__input,
+.bannerForm__select,
+.bannerForm__btn{
+	background-color: #F1F1F1;
+	border: none;
+	color: #353535;
+	font-size: 1.4rem;
+	letter-spacing: .1rem;
+	line-height: 1.5; /* My */
+	margin-bottom: 1.5rem;
+	outline: none;
+	padding: 1.5rem 2.0rem;
+	/* width: 100%; */
+}
+.bannerForm__form .bannerForm__btn{
+	background-color: #3369E7;
+	border: none;
+	/* border-radius: 1.5rem; */
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	letter-spacing: .1rem;
+	outline: none;
+	padding: 1.4rem 0;
+	transition: 0.5s all;
+	width: 100%;
+}
+.bannerForm__form .bannerForm__btn:hover{
+	background-color: #5d5e9b;
+	font-weight: bold;
+	/* color: #3369E7; */
+}
+.bannerForm__form .bannerForm__spanTerms{
+	display: block;
+	font-size: 1.2rem;
+	line-height: normal;
+}
+/* .bannerForm__form .bannerForm__spanTerms .bannerForm__linkTerms{
+	color: #3369E7;
+} */
+.bannerForm__form span a{
+	color: #3369E7;
+}
 
 
 
